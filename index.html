@@ -1,14 +1,10 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Realidad Aumentada - Componentes de PC</title>
+    <title>Realidad Aumentada - Prueba OBJ</title>
     <script src="https://aframe.io/releases/1.5.0/aframe.min.js"></script>
-    
     <script src="https://unpkg.com/aframe-xr-boilerplate/dist/aframe-xr-boilerplate.js"></script>
-
-    <style>
-        body { margin: 0; overflow: hidden; }
-    </style>
+    <style> body { margin: 0; overflow: hidden; } </style>
 </head>
 <body>
     <a-scene
@@ -16,12 +12,13 @@
         vr-mode-ui="enabled: false"
         ar-mode="enabled: true">
 
-        <a-entity
-            gltf-model="./01_laptop.glb"
-            scale="0.5 0.5 0.5" 
+        <a-obj-model 
+            src="./mac laptop.obj" 
+            mtl="./mac laptop.mtl"
+            scale="0.005 0.005 0.005" 
             position="0 0 0"
             rotation="0 0 0">
-        </a-entity>
+        </a-obj-model>
 
         <a-entity camera>
             <a-cursor></a-cursor>
@@ -36,4 +33,3 @@
     </a-scene>
 </body>
 </html>
-
