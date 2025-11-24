@@ -1,10 +1,14 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Realidad Aumentada de Componentes</title>
+    <title>Realidad Aumentada - Componentes de PC</title>
     <script src="https://aframe.io/releases/1.5.0/aframe.min.js"></script>
     
     <script src="https://unpkg.com/aframe-xr-boilerplate/dist/aframe-xr-boilerplate.js"></script>
+
+    <style>
+        body { margin: 0; overflow: hidden; }
+    </style>
 </head>
 <body>
     <a-scene
@@ -12,23 +16,23 @@
         vr-mode-ui="enabled: false"
         ar-mode="enabled: true">
 
-
-        
         <a-entity
-            gltf-model="./01_laptop.glb"
-            scale="0.5 0.5 0.5"
-            position="0 0 0">
+            gltf-model="./mac-laptop.glb"
+            scale="0.5 0.5 0.5" 
+            position="0 0 0"
+            rotation="0 0 0">
         </a-entity>
 
         <a-entity camera>
             <a-cursor></a-cursor>
         </a-entity>
+        
+        <a-text value="Toca el botón 'AR' para iniciar la Realidad Aumentada."
+                position="-1 2 -3"
+                color="white"
+                width="3"
+                align="center"></a-text>
 
     </a-scene>
 </body>
 </html>
-
-
-
-
-
