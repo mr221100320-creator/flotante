@@ -12,13 +12,11 @@
         vr-mode-ui="enabled: false"
         ar-mode="enabled: true">
 
-        <a-obj-model 
-            src="./mac laptop.obj" 
-            mtl="./mac laptop.mtl"
-            scale="0.005 0.005 0.005" 
-            position="0 0 0"
-            rotation="0 0 0">
-        </a-obj-model>
+        <a-entity gltf-model="./01_laptop.glb" 
+          scale="0.5 0.5 0.5" 
+          position="0 0 0"
+          rotation="0 0 0">
+</a-entity>
 
         <a-entity camera>
             <a-cursor></a-cursor>
@@ -33,3 +31,4 @@
     </a-scene>
 </body>
 </html>
+
