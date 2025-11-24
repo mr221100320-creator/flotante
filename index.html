@@ -12,23 +12,31 @@
 <body>
     
     <a-scene 
-        embedded 
-        arjs="sourceType: webcam; detectionMode: mono; debugUIEnabled: false;">
-        <a-entity
-            
-            obj-model="obj: url(./laptop_01/mac laptop.obj); 
-            mtl: url(./laptop_01/mac laptop.mtl)"
-            
-            position="0 -0.5 -3" rotation="-90 0 0" 
-            scale="0.01 0.01 0.01"> 
-        </a-entity>
+    embedded 
+    vr-mode-ui="enabled: false"
+    arjs="sourceType: webcam; 
+          trackingMethod: best; 
+          debugUIEnabled: false;
+          sourceWidth: 1280; 
+          sourceHeight: 720; 
+          sourceParameters: { facingMode: 'environment' };"> 
 
-        <a-entity camera></a-entity>
-    </a-scene>
+    <a-entity
+        
+        obj-model="obj: url(./portátil_01/mac laptop.obj); 
+        mtl: url(./portátil_01/mac laptop.mtl)"
+        
+        position="0 -2.5 -3" 
+        rotation="-90 0 0" 
+        scale="0.001 0.001 0.001"> 
+    </a-entity>
+    
+</a-scene>
 
     <div class="info-panel">
         <p>El modelo 3D de la laptop se está mostrando **directamente** en la escena (modo **Markerless Básico**).</p>
     </div>
 
 </body>
+
 </html>
