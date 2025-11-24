@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script src="https://aframe.io/releases/1.5.0/aframe.min.js"></script>
+    <script src="https://raw.githack.com/AR-js-org/AR.js/master/aframe/build/aframe-ar.js"></script>
+
+    <style>
+        /* ... (tus estilos se mantienen iguales) ... */
+    </style>
+</head>
+
+<body>
+    
+    <a-scene 
+        embedded 
+        arjs="sourceType: webcam; detectionMode: mono; debugUIEnabled: false;">
+        <a-entity
+            
+            obj-model="obj: url(./laptop_01/mac laptop.obj); 
+            mtl: url(./laptop_01/mac laptop.mtl)"
+            
+            position="0 -0.5 -3" rotation="-90 0 0" 
+            scale="0.01 0.01 0.01"> 
+        </a-entity>
+
+        <a-entity camera></a-entity>
+    </a-scene>
+
+    <div class="info-panel">
+        <p>El modelo 3D de la laptop se está mostrando **directamente** en la escena (modo **Markerless Básico**).</p>
+    </div>
+
+</body>
+</html>
